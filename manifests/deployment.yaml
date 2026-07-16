@@ -23,10 +23,10 @@ metadata:
   name: will-playground
   namespace: dev
 spec:
-  ports:
-      - protocol: TCP
-        port: 8888
-        targetPort: 8888
+  type: NodePort
   selector:
     app.kubernetes.io/name: will-playground
-  type: ClusterIP
+  ports:
+    - port: 8888
+      targetPort: 8888
+      nodePort: 8888   # opcional
