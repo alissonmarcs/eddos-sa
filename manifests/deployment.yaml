@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: will-playground
-          image: wil42/playground:v2
+          image: wil42/playground:v1
 ---
 apiVersion: v1
 kind: Service
